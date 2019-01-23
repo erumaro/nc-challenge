@@ -1,7 +1,9 @@
 .output-container {
     border: 1px solid #000;
-    height: 50px;
     margin: 3rem 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 /* Needed because Chrome ignores .range and uses it's own defaults for the input type... */
@@ -37,6 +39,7 @@ input[type=range]{
   }
 
 .range::-webkit-slider-thumb{
+    /* Removes default appearence of thumb and readjusts it on top of slider. */
     -webkit-appearance: none;
     margin-top: -5px;
 
