@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Natural Cycles - Front-end Challenge</title>
+    <link rel="stylesheet" href="../style/bulma.min.css">
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <!-- Form input fields -->
+            <form id="form-input">
+                <div class="field">
+                    <label class="label is-medium">Change text</label>
+                    <div class="control">
+                        <input id="change-text" class="input is-medium" type="text" placeholder="Text input">
+                    </div>
+                    <p class="help">Write in input field to change text of output area dynamically!</p>
+                </div>
+                <div class="field">
+                        <label class="label is-medium">Change width of output div</label>
+                        <div class="control">
+                            <input id="change-width" class="input is-medium range" type="range" value="800" min="200" max="1344">
+                        </div>
+                        <p class="help">Write in input field to change text of output area dynamically!</p>
+                    </div>
+            </form>
+            <!-- Output area -->
+            <div id="form-output" class="output-container"></div>
+        </div>
+    </main>
+    <script src="../src/index.js"></script>
+</body>
+</html>

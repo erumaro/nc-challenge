@@ -1,0 +1,49 @@
+.output-container {
+    border: 1px solid #000;
+    height: 50px;
+    margin: 3rem 0;
+}
+
+/* Needed because Chrome ignores .range and uses it's own defaults for the input type... */
+input[type=range]{
+    -webkit-appearance: none;
+}
+
+.range{
+    background-color: #00d1b2;
+}
+
+.range::-moz-range-track{
+    width: 100%;
+    height: 5px;
+    cursor: pointer;
+    background: #fff;
+}
+
+.range::-moz-range-thumb{
+    height: 15px;
+    width: 15px;
+    border-radius: 15px;
+    background: #c0c0c0;
+    cursor: pointer;
+    border: 1px solid rgb(182, 182, 182);
+}
+
+.range::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 5px;
+    cursor: pointer;
+    background: #fff;
+  }
+
+.range::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    margin-top: -5px;
+
+    height: 15px;
+    width: 15px;
+    border-radius: 15px;
+    background: #c0c0c0;
+    cursor: pointer;
+    border: 1px solid rgb(182, 182, 182);
+}
